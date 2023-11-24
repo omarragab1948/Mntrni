@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+html,
+body {
+  min-height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+code[class*='language-'] {
+  padding: 0;
+}
+
+.css-n1hj4n-MuiToolbar-root {
+  justify-content: flex-end;
+}
+.set-box,
+.note-box {
+  display: none !important;
+}
+.css-1pl5fxi > div {
+  z-index: 1000 !important;
+}
+header {
+  z-index: 1100 !important;
+}
+
+.username {
+  display: none !important;
+}
+.css-n1hj4n-MuiToolbar-root {
+  box-shadow: none !important;
+}
+.css-18jqkw2-MuiPaper-root-MuiMenu-paper-MuiPopover-paper {
+  left: 980px !important;
+}
+.css-1204x0-MuiButtonBase-root-MuiListItemButton-root.active,
+.css-y8jyqa-MuiButtonBase-root-MuiListItemButton-root.active {
+  background-color: #765da5 !important;
+  background: linear-gradient(to bottom, #765da5, #765da5) !important;
+}
+.css-lbheh4-MuiDrawer-docked {
+  z-index: 200000000 !important;
+}
+.css-sbn3f9-MuiDataGrid-columnHeaderTitle {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #000 !important;
+}
+.css-1k9xpz4-MuiDataGrid-root .MuiDataGrid-cellContent {
+  color: #b91100 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+.css-1havfnf-MuiPaper-root-MuiAccordion-root {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.css-1pwiara-MuiDataGrid-root .MuiPaginationItem-root {
+  border-radius: 100% !important;
+  color: #000 !important;
+}
+.css-qpyg04-MuiDataGrid-root .MuiPaginationItem-root {
+  border-radius: 100% !important;
+}
+.css-10ci9if-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #765da5 !important;
+  color: #ffffff !important;
+}
+.css-1oj2twp-MuiPagination-root {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.css-1pwiara-MuiDataGrid-root .MuiDataGrid-columnHeader,
+.css-1pwiara-MuiDataGrid-root .MuiDataGrid-cell {
+  min-width: 230px !important;
+}
+
+.css-axafay-MuiDataGrid-virtualScroller {
+  overflow-x: auto !important;
+}
+
+.hover-row:hover {
+  background-color: #e9eaef;
+}
+.css-jtqytf-MuiPaper-root {
+  width: 387px !important;
+}
+
+table {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .css-gygu0m-MuiGrid-root {
+    justify-content: center;
+  }
+}
+@media (min-width: 604px) {
+  .username {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) {
+  .set-box,
+  .note-box {
+    display: block !important;
+  }
+}
+@media (max-width: 991px) {
+  .css-m128k9-MuiTypography-root {
+    left: 0 !important;
+  }
+
+  .css-sdi5m0 {
+    right: 0 !important;
+    left: 1.5rem !important;
+    z-index: 10000 !important;
+    width: fit-content !important;
+  }
+  table {
+    width: 1000px !important;
+  }
+}
+@media (max-width: 1199px) {
+  .css-11jd17u-MuiGrid-root {
+    position: relative;
+    left: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .css-11jd17u-MuiGrid-root {
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+    z-index: 100000;
+  }
+}
