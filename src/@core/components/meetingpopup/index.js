@@ -10,7 +10,8 @@ import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
 import Typography from '@mui/material/Typography'
 import { Box } from '@mui/system'
-import ReactQuill from 'react-quill'
+
+// import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
 import DotsMenu from '../../components/dotsMenu/index'
 import avata1 from '/public/images/58028 1 (1).svg'
@@ -96,7 +97,7 @@ export default function CustomizedDialogs({ popup, handleEdit }) {
             <Typography sx={{ color: '#00061F', fontSize: '18px', fontWeight: '600', marginY: '20px' }}>
               Meeting Summary
             </Typography>
-            <ReactQuill className='text-black' theme='snow' value={text} onChange={setText} modules={modules} />
+            {/* <ReactQuill className='text-black' theme='snow' value={text} onChange={setText} modules={modules} /> */}
           </Box>
           <Box sx={{ marginBottom: '30px' }}>
             <Typography sx={{ color: '#00061F', fontSize: '18px', fontWeight: '600', marginTop: '20px' }}>

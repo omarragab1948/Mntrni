@@ -1,3 +1,5 @@
+'use client'
+
 import { Box } from '@mui/system'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
