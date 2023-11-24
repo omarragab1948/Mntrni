@@ -2,13 +2,13 @@
 import VerticalNavLink from './VerticalNavLink'
 import VerticalNavGroup from './VerticalNavGroup'
 import VerticalNavSectionTitle from './VerticalNavSectionTitle'
-import dashboard from '../../../../../../public/images/categories 1.svg'
-import spaces from '../../../../../../public/images/categories 2.svg'
-import cat3 from '../../../../../../public/images/categories 3.svg'
-import cat4 from '../../../../../../public/images/categories 4.svg'
-import cat5 from '../../../../../../public/images/categories 5.svg'
-import cat6 from '../../../../../../public/images/categories 6.svg'
-import cat7 from '../../../../../../public/images/categories 7.svg'
+import dashboard from '/public/images/categories 1.svg'
+import spaces from '/public/images/categories 2.svg'
+import cat3 from '/public/images/categories 3.svg'
+import cat4 from '/public/images/categories 4.svg'
+import cat5 from '/public/images/categories 5.svg'
+import cat6 from '/public/images/categories 6.svg'
+import cat7 from '/public/images/categories 7.svg'
 
 const resolveNavItemComponent = item => {
   console.log(item)

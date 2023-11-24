@@ -14,8 +14,7 @@ import UserDropdown from 'src/@core/layouts/components/shared-components/UserDro
 import NottificationDropdown from 'src/@core/layouts/components/shared-components/NotificationDropdown'
 
 // ** images import
-import notificatin from '../../../../public/images/categories 8.svg'
-import set from '../../../../public/images/categories 9.svg'
+import set from '/public/images/categories 9.svg'
 import Link from 'next/link'
 
 const AppBarContent = props => {

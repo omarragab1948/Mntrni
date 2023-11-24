@@ -14,7 +14,7 @@ import Icon from 'src/@core/components/icon'
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
 
-import logo from '../../../../../../public/images/download 1.png'
+import logo from '/public/images/download 1.png'
 
 // ** Styled Components
 const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
