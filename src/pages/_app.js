@@ -9,7 +9,6 @@ import NProgress from 'nprogress'
 import { CacheProvider } from '@emotion/react'
 
 // ** Config Imports
-
 import { defaultACLObj } from 'src/configs/acl'
 import themeConfig from 'src/configs/themeConfig'
 
