@@ -10,7 +10,7 @@ const Meetings = () => {
   const { handlePageTilte } = useContext(SettingsContext)
   useEffect(() => {
     handlePageTilte('Meetings')
-  }, [])
+  }, [handlePageTilte])
 
   const group = (
     <>
