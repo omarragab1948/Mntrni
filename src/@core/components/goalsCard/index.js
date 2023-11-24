@@ -23,11 +23,11 @@ import Dots from '../dotsMenu'
 import Progress from '../progress'
 import { Divider } from '@mui/material'
 import Image from 'next/image'
-import user1 from '../../../../public/images/58028 1.svg'
-import user2 from '../../../../public/images/58028 1 (1).svg'
-import user3 from '../../../../public/images/58028 1 (2).png'
-import messages from '../../../../public/images/comment-alt-middle 13.svg'
-import attach from '../../../../public/images/comment-alt-middle 14.svg'
+import user1 from '/public/images/58028 1.svg'
+import user2 from '/public/images/58028 1 (1).svg'
+import user3 from '/public/images/58028 1 (2).png'
+import messages from '/public/images/comment-alt-middle 13.svg'
+import attach from '/public/images/comment-alt-middle 14.svg'
 
 const ExpandMore = styled(props => {
   const { expand, ...other } = props
