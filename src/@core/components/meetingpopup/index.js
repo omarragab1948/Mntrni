@@ -1,4 +1,6 @@
 'use client'
+import dynamic from 'next/dynamic'
+
 import * as React from 'react'
 import Button from '@mui/material/Button'
 import { styled } from '@mui/material/styles'
@@ -18,6 +20,8 @@ import avata1 from '/public/images/58028 1 (1).svg'
 import avata2 from '/public/images/58028 1 (2).svg'
 import Image from 'next/image'
 import Checkbox from '@mui/material/Checkbox'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -27,6 +31,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     padding: theme.spacing(1)
   }
 }))
+const DynamicReactQuill = dynamic(() => import('react-quill'), { ssr: false })
 
 export default function CustomizedDialogs({ popup, handleEdit }) {
   const handleClose = () => {
@@ -58,6 +63,11 @@ export default function CustomizedDialogs({ popup, handleEdit }) {
       <Image alt='Remy Sharp' src={avata2} style={{ borderRadius: '100%' }} />
     </>
   )
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   return (
     <React.Fragment>
@@ -93,12 +103,20 @@ export default function CustomizedDialogs({ popup, handleEdit }) {
           <CloseIcon />
         </IconButton>
         <DialogContent dividers sx={{}}>
-          <Box style={{ width: '100%' }}>
-            <Typography sx={{ color: '#00061F', fontSize: '18px', fontWeight: '600', marginY: '20px' }}>
-              Meeting Summary
-            </Typography>
-            {/* <ReactQuill className='text-black' theme='snow' value={text} onChange={setText} modules={modules} /> */}
-          </Box>
+          {isClient && (
+            <Box style={{ width: '100%' }}>
+              <Typography sx={{ color: '#00061F', fontSize: '18px', fontWeight: '600', marginY: '20px' }}>
+                Meeting Summary
+              </Typography>
+              <DynamicReactQuill
+                className='text-black'
+                theme='snow'
+                value={text}
+                onChange={setText}
+                modules={modules}
+              />
+            </Box>
+          )}
           <Box sx={{ marginBottom: '30px' }}>
             <Typography sx={{ color: '#00061F', fontSize: '18px', fontWeight: '600', marginTop: '20px' }}>
               Select Goals
