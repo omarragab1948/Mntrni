@@ -21,7 +21,7 @@ import ChatModel from '../../@core/components/chatModel/index'
 import { useContext } from 'react'
 import { SettingsContext } from 'src/@core/context/settingsContext'
 import Layout from './Layout'
-import GoalModel from '../../@core/components/goalModel/index'
+import GoalModel from '../../@core/components/goalmodel/index'
 
 const Spaces = () => {
   const [messageWindow, setMessageWindow] = useState(false)
